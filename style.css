@@ -1,0 +1,106 @@
+:root {
+  --dark-green: #1f3d2b; /* Used for text, outlines and shadows */
+  --mint: #bce4d8; /* Used for the page background */
+  --lime: #a8d672; /* Used for the main buttons, and highlights */
+  --coral: #ff7a59; /* Used for stickers, squiggles, and badges */
+  --pink: #f7b8cf; /* Just anywhere that fits ( not main color but useful in general) */
+  --butter: #f9d77e; /* Just anywhere that fits ( not main color but useful in general) */
+  --soft-text: #3d5a47; /* Used for paragraphs, and descriptions */
+  --pale-green: #dcefd0; /* Used for blobs, and chips */
+  --handwriting: #c2492b; /* Used for the like little cool notes */
+  --white: #ffffff; /* Used for cards and navigation */
+}
+* {
+  box-sizing: border-box;
+}
+input,
+textarea,
+button {
+  font: inherit;
+}
+body {
+  background-color: var(--mint);
+  color: var(--dark-green);
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+header {
+  padding: 24px;
+}
+nav {
+  background-color: var(--white);
+  border-radius: 999px;
+  padding: 12px 14px;
+  border: 2px solid var(--dark-green);
+  box-shadow: 0 5px 0 var(--dark-green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  gap: 8px;
+}
+a {
+  text-decoration: none;
+  color: var(--dark-green);
+}
+.nav-links a {
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: background-color 0.15s;
+}
+.nav-links a:hover {
+  background-color: var(--pale-green);
+}
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.8px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.15s;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+.cart {
+  background: var(--dark-green);
+  color: var(--white);
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: background-color 0.15s, transform 0.1s;
+}
+.nav-links .active {
+  background-color: var(--pale-green);
+  font-weight: 700;
+}
+.cart:hover {
+  background-color: var(--soft-text);
+}
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  transition: transform 0.3s;
+}
+.logo-badge {
+  fill: var(--lime);
+  stroke: var(--dark-green);
+  stroke-width: 6;
+}
+.logo-sparkle {
+  fill: var(--dark-green);
+  stroke: var(--dark-green);
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+.logo:hover .logo-mark {
+  transform: rotate(90deg);
+}
+.logo:hover {
+    background-color: var(--pale-green);
+}
+.cart:active {
+  transform: translateY(3px);
+}
