@@ -104,3 +104,59 @@ a {
 .cart:active {
   transform: translateY(3px);
 }
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 48px;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 610px;
+}
+.tag {
+    background-color: var(--white);
+    border: 2px solid var(--dark-green);
+    border-radius: 999px;
+    padding: 6px 16px 6px 6px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: flex-start;
+}
+.tag-new {
+    background-color: var(--coral);
+    color: var(--dark-green);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 12px;
+}
+.hero h1 {
+    margin: 0;
+    font-size: 80px;
+    line-height: 0.98;
+    font-weight: 900;
+    letter-spacing: -3px;
+}
+.highlight {
+    background-color: var(--lime);
+    padding: 2px 16px 8px;
+    border-radius: 20px;
+    border: 3px solid var(--dark-green);
+    box-shadow: 0 5px 0 var(--dark-green);
+    transform: rotate(-3deg);
+    display: inline-block;
+    line-height: 1.1;
+    vertical-align: middle;
+}
+.hero-sub {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.55;
+    color: var(--soft-text);
+}
