@@ -460,3 +460,56 @@ a {
     display: none;
   }
 }
+.ribbons {
+  position: relative;
+  height: 150px;
+  margin: 10px 0 30px;
+  overflow: hidden;
+}
+.ribbon {
+  position: absolute;
+  left: -40px;
+  right: -40px;
+  padding: 16px;
+  white-space: nowrap;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+.ribbon-back {
+  background-color: var(--coral);
+  color: var(--dark-green);
+  top: 34px;
+  border-bottom: 3px solid var(--dark-green);
+  border-top: 3px solid var(--dark-green);
+  font-size: 18px;
+  transform: rotate(2deg);
+}
+.ribbon-front {
+  background-color: var(--dark-green);
+  color: var(--mint);
+  top: 46px;
+  font-size: 24px;
+  transform: rotate(-2deg);
+}
+.track {
+  display: flex;
+  gap: 28px;
+  width: max-content;
+  animation: slide 40s linear infinite;
+}
+.ribbon-back .track {
+  animation-direction: reverse;
+  animation-duration: 50s;
+}
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}
+.star {
+  color: var(--lime);
+}
